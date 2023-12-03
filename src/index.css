@@ -17,7 +17,177 @@ html {
   height: 100vh;
 }
 
+/* Sidebar */
+.sidebar {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 5px 15px;
+  transition: all 0.4s ease;
+  background: #ffffff;
+}
 
+.logospace {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000000;
+  padding: 5px;
+  text-align: center;
+}
+
+.nav-items {
+  height: -70%;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  margin: 18px 0px;
+  padding: 14px 10px;
+  transition: ease-in-out 0.2s;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: #ffffff;
+  background: #5c2751;
+}
+
+.nav-item-name {
+  margin-left: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 5px 60px 50px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+}
+
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.user-fname {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: -19px;
+}
+
+.user-uname,
+.user-email {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: -19px;
+  margin-top: -4px;
+}
+
+/* Rightbar */
+.rightbar {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f8f8;
+  width: 300px;
+}
+
+.form-space {
+  height: 65%;
+  padding: 10px 20px 20px;
+  border-bottom: 1px #DDDDDD solid;
+  background-color: #f9f8f8;
+}
+
+.progress-space {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 35%;
+  padding: 20px;
+  background-color: #f9f8f8;
+}
+
+/* Content */
+.content {
+  left: 300px;
+  width: calc(100% - 600px);
+}
+
+/* Page Headers */
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px #000000 solid;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+/* Task Card */
+.task-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #232323;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.task-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.task-option {
+  cursor: pointer;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.task-due,
+.task-rem {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
 
 /* SplashScreen */
 .splash-container {
