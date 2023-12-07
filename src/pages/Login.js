@@ -16,7 +16,20 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
+  const handleGuestCheckboxChange = (event) => {
+    setIsGuest(event.target.checked);
+  };
 
+  const validatePassword = () => {
+    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    return isGuest || passwordRegex.test(password);
+  };
+
+  const onSubmit = async () => {
+    if (!validatePassword()) {
+      toast.error("Password does not meet complexity requirements.");
+      return;
+    }
 
     const user = {
       username,
