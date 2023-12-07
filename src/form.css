@@ -1,0 +1,73 @@
+html,
+body {
+
+  background: #ffffff;
+
+}
+.container {
+  background-color: #000000;
+  max-width: 600px;
+  margin: 80px 155px;
+  padding: 40px;
+  text-align: center;
+}
+.container * {
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.login-icon {
+  font-family: 'Trattatello', fantasy;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.login-form {
+  background: #ffffffae;
+  color: #565656;
+  padding: 40px;
+}
+
+.login-form .login-title {
+  font-size: 38px;
+  font-weight: 300;
+  margin: 0px 0px 45px 0px;
+}
+
+.login-form .login-input {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #e7e7e7;
+  background: #fcfcfc;
+}
+
+.login-form .login-input.button {
+  border: none;
+  border-radius: 50px;
+  color: white;
+  width: 250px;
+  background: #ff0048;
+}
+
+.login-forgot {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #999;
+}
+
+.login-signup {
+  color: #000000;
+  margin: 20px 0px;
+  font-size: 14px;
+}
+
+.login-signup a {
+  color: #000000;
+  font-weight: 600;
+}
