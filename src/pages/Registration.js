@@ -26,6 +26,16 @@ const Register = () => {
     };
 
 
+    const validatePassword = () => {
+        const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        return passwordRegex.test(password);
+      };
+    
+      const onSubmit = async () => {
+        if (!validatePassword()) {
+          toast.error("Password does not meet complexity requirements.");
+          return;
+        }
     
         const user = {
           fullname,
